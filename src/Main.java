@@ -1,6 +1,9 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class App {
+
+    Scanner scan = new Scanner(System.in);
 
     public void run() {
         // Arraylist Opgave
@@ -14,6 +17,7 @@ class App {
         String string = "string";
         boolean booleanValue = doesArrayListContainString(arrayList, string);
         System.out.println(booleanValue);*/
+
         // Bog Opgave
         /*
         Bibliotek biblio = new Bibliotek();
@@ -22,6 +26,18 @@ class App {
         Bog bog2 = new Bog(001000001,"Lars Henrik",1996);
 
         System.out.println(biblio.isBookInList(bog2));*/
+
+        // Hvor tit skal græsset slås Opgave
+       /* System.out.print("Nuværende græshøjde: ");
+        int currentHeight = scan.nextInt() * 10;
+        System.out.print("Græshøjde maksimum: ");
+        int allowedHeight = scan.nextInt() * 10;
+
+        Graes graes = new Graes();
+        System.out.println(graes.howManyDaysUntilTheGrassNeedsToBeCut(currentHeight, allowedHeight));*/
+
+        // Kvadrat Opgave
+
     }
 
 
