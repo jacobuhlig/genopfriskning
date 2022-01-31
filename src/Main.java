@@ -37,9 +37,13 @@ class App {
         System.out.println(graes.howManyDaysUntilTheGrassNeedsToBeCut(currentHeight, allowedHeight));*/
 
         // Kvadrat Opgave
+        /*
+        tegnKvadrat(6, '#');
+         */
+
+        // Proper case
 
     }
-
 
     public boolean doesArrayListContainString(ArrayList<String> arrayList, String string) {
             if (arrayList.contains(string)) {
@@ -48,6 +52,17 @@ class App {
             }
     return false;
     }
+
+    public void tegnKvadrat(int tal, char tegn){
+
+        for (int i = 0; i < tal; i++) {
+            for (int j = 0; j < tal; j++) {
+                System.out.print(tegn + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }
 
 public class Main {
