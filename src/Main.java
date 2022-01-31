@@ -43,6 +43,8 @@ class App {
 
         // Proper case
 
+        Proper proper = new Proper();
+        System.out.println(proper.properCase("Hello my frieNd HALLLO"));
     }
 
     public boolean doesArrayListContainString(ArrayList<String> arrayList, String string) {
