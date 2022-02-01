@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 class App {
@@ -42,9 +43,27 @@ class App {
          */
 
         // Proper case
-
+        /*
         Proper proper = new Proper();
         System.out.println(proper.properCase("Hello my frieNd HALLLO"));
+         */
+
+        // Sortering
+        //printAlphabetically("abekat","musefælde","ananas","slut","solskin");
+    }
+
+    public void printAlphabetically(String... args){
+        ArrayList<String> listOfWords = new ArrayList<>();
+
+        for (String word : args){
+            listOfWords.add(word);
+        }
+
+        Collections.sort(listOfWords, Collections.reverseOrder());
+
+        for (String word : listOfWords) {
+            System.out.println(word);
+        }
     }
 
     public boolean doesArrayListContainString(ArrayList<String> arrayList, String string) {
