@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -50,6 +51,21 @@ class App {
 
         // Sortering
         //printAlphabetically("abekat","musefælde","ananas","slut","solskin");
+
+        //Søgning
+        /*String[] arrayWithStrings = {"hallo", "baby", "boi"};
+        String stringToCheck = "boi";
+        System.out.println(isStringInArray(arrayWithStrings, stringToCheck));*/
+
+    }
+
+    public int isStringInArray(String[] stringArray, String string) {
+        for (int i = 0; i < stringArray.length; i++) {
+            if(stringArray[i].equals(string)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     public void printAlphabetically(String... args){
